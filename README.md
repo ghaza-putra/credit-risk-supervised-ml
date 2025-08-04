@@ -27,6 +27,7 @@ penting dalam deteksi risiko kredit. Sehingga unggul mendeteksi nasabah gagal ba
     - credit_score
     - loan_amount
     - term
+
 Fitur-fitur ini sangat berkontribusi dalam membedakan antara nasabah berisiko tinggi dan rendah.
 
 4. Koefisien LR:
