@@ -13,8 +13,10 @@ Scikit-learn versi: 1.6.1
 
 ## Insight
 1. Logistic Regression:
+
 Akurasi model mencapai 0.79, dengan kelebihan pada interpretabilitas dan efisiensi. Cocok untuk baseline model dan analisis faktor risiko, namun sedikit kurang dalam menangkap kompleksitas data non-linear.
 2. Random Forest:
+
 Memberikan performa terbaik dengan akurasi 0.86. Model ini sangat kuat dalam menangkap interaksi kompleks antar fitur dan memiliki nilai recall tinggi pada kelas ‘Bad’ yang penting dalam deteksi risiko kredit.
 3. Fitur Penting (Feature Importance):
     - number_of_loans
@@ -22,12 +24,15 @@ Memberikan performa terbaik dengan akurasi 0.86. Model ini sangat kuat dalam men
     - credit_score
     - loan_amount
     - term
+   
    Fitur-fitur ini sangat berkontribusi dalam membedakan antara nasabah berisiko tinggi dan rendah.
 4. Koefisien LR:
+
 Pada model Logistic Regression, number_of_loans, loan_amount, dan credit_score memiliki bobot koefisien tertinggi, menunjukkan pengaruh langsung terhadap probabilitas gagal bayar.
 
 ## Kesimpulan
 Model Random Forest direkomendasikan karena memberikan performa terbaik dalam mendeteksi risiko kredit dengan akurasi dan recall yang tinggi. Logistic Regression tetap relevan karena hasilnya cukup baik dan memberikan interpretasi fitur yang jelas, cocok untuk analisis dan regulasi. Kedua model menunjukkan bahwa fitur finansial seperti jumlah pinjaman dan skor kredit sangat menentukan dalam klasifikasi risiko. Proyek ini menunjukkan bagaimana pendekatan supervised learning dapat digunakan secara efektif untuk pengambilan keputusan dalam bidang keuangan.
 
 #ML #Python #CreditRisk #SupervisedLearning #DataScience
+
 Silakan hubungi saya jika ingin berdiskusi: ghazaputra99@gmail.com
