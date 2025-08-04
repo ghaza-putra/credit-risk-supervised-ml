@@ -14,12 +14,12 @@ Dataset: Credit Risk Dataset (data internal untuk kebutuhan proyek virtual inter
 ## Insight
 1. Logistic Regression:
 
-Akurasi model mencapai 0.79, dengan kelebihan pada interpretabilitas dan efisiensi. Cocok untuk baseline model dan analisis faktor risiko, namun sedikit kurang dalam menangkap kompleksitas data non-linear.
+Model memiliki akurasi 94% dan AUC 0.98, dengan kelebihan pada interpretabilitas dan efisiensi. Cocok untuk baseline model dan analisis faktor risiko, namun sedikit kurang dalam menangkap kompleksitas data non-linear.
 
 2. Random Forest:
 
-Memberikan performa terbaik dengan akurasi 0.86. Model ini sangat kuat dalam menangkap interaksi kompleks antar fitur dan memiliki nilai recall tinggi pada kelas ‘Bad’ yang 
-penting dalam deteksi risiko kredit.
+Memberikan performa terbaik dengan akurasi 0.96. Model ini sangat kuat dalam menangkap interaksi kompleks antar fitur dan memiliki nilai recall tinggi pada kelas ‘Bad’ yang 
+penting dalam deteksi risiko kredit. Sehingga unggul mendeteksi nasabah gagal bayar, cocok untuk deployment.
 
 3. Fitur Penting (Feature Importance):
     - number_of_loans
