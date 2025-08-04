@@ -5,27 +5,30 @@ Proyek ini bertujuan untuk memprediksi status kelayakan kredit (loan status) ber
 Dataset: Credit Risk Dataset (data internal untuk kebutuhan proyek virtual internship ID/X Partners dan Rakamin Academy).
 
 ## Versi Pustaka yang Digunakan
-Pandas versi: 2.2.2
-Numpy versi: 2.0.2
-Matplotlib versi: 3.10.0
-Seaborn versi: 0.13.2
-Scikit-learn versi: 1.6.1
+- Pandas versi: 2.2.2
+- Numpy versi: 2.0.2
+- Matplotlib versi: 3.10.0
+- Seaborn versi: 0.13.2
+- Scikit-learn versi: 1.6.1
 
 ## Insight
 1. Logistic Regression:
 
 Akurasi model mencapai 0.79, dengan kelebihan pada interpretabilitas dan efisiensi. Cocok untuk baseline model dan analisis faktor risiko, namun sedikit kurang dalam menangkap kompleksitas data non-linear.
+
 2. Random Forest:
 
-Memberikan performa terbaik dengan akurasi 0.86. Model ini sangat kuat dalam menangkap interaksi kompleks antar fitur dan memiliki nilai recall tinggi pada kelas ‘Bad’ yang penting dalam deteksi risiko kredit.
+Memberikan performa terbaik dengan akurasi 0.86. Model ini sangat kuat dalam menangkap interaksi kompleks antar fitur dan memiliki nilai recall tinggi pada kelas ‘Bad’ yang 
+penting dalam deteksi risiko kredit.
+
 3. Fitur Penting (Feature Importance):
     - number_of_loans
     - annual_income
     - credit_score
     - loan_amount
     - term
-   
-   Fitur-fitur ini sangat berkontribusi dalam membedakan antara nasabah berisiko tinggi dan rendah.
+Fitur-fitur ini sangat berkontribusi dalam membedakan antara nasabah berisiko tinggi dan rendah.
+
 4. Koefisien LR:
 
 Pada model Logistic Regression, number_of_loans, loan_amount, dan credit_score memiliki bobot koefisien tertinggi, menunjukkan pengaruh langsung terhadap probabilitas gagal bayar.
