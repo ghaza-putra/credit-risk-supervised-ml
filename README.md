@@ -14,28 +14,25 @@ Dataset: Credit Risk Dataset (data internal untuk kebutuhan proyek virtual inter
 ## Insight
 1. Logistic Regression:
 
-Model memiliki akurasi 94% dan AUC 0.98, dengan kelebihan pada interpretabilitas dan efisiensi. Cocok untuk baseline model dan analisis faktor risiko, namun sedikit kurang dalam menangkap kompleksitas data non-linear.
+- Akurasi: 80%, AUC: 0.99
+- Kuat dalam recall (96%), sehingga hampir semua nasabah berisiko terdeteksi.
+- Cocok sebagai baseline model, namun precision rendah (73%), artinya masih ada salah klasifikasi pada prediksi nasabah berisiko.
 
 2. Random Forest:
 
-Memberikan performa terbaik dengan akurasi 0.96. Model ini sangat kuat dalam menangkap interaksi kompleks antar fitur dan memiliki nilai recall tinggi pada kelas ‘Bad’ yang 
-penting dalam deteksi risiko kredit. Sehingga unggul mendeteksi nasabah gagal bayar, cocok untuk deployment.
+- Akurasi: 99%, Precision: 99%, Recall: 98%
+- Model paling unggul karena mampu menangkap interaksi kompleks antar fitur.
+- Sangat konsisten dan seimbang antara precision dan recall, sehingga cocok untuk deployment.
 
-3. Fitur Penting (Feature Importance):
-    - number_of_loans
-    - annual_income
-    - credit_score
-    - loan_amount
-    - term
+3. Interpretasi Logistic Regression
 
-Fitur-fitur ini sangat berkontribusi dalam membedakan antara nasabah berisiko tinggi dan rendah.
-
-4. Koefisien LR:
-
-Pada model Logistic Regression, number_of_loans, loan_amount, dan credit_score memiliki bobot koefisien tertinggi, menunjukkan pengaruh langsung terhadap probabilitas gagal bayar.
+- Variabel seperti loan_amount, credit_score, dan number_of_loans punya koefisien terbesar.
+- Menunjukkan bahwa semakin tinggi jumlah pinjaman dan jumlah pinjaman aktif, semakin besar peluang gagal bayar.
 
 ## Kesimpulan
-Model Random Forest direkomendasikan karena memberikan performa terbaik dalam mendeteksi risiko kredit dengan akurasi dan recall yang tinggi. Logistic Regression tetap relevan karena hasilnya cukup baik dan memberikan interpretasi fitur yang jelas, cocok untuk analisis dan regulasi. Kedua model menunjukkan bahwa fitur finansial seperti jumlah pinjaman dan skor kredit sangat menentukan dalam klasifikasi risiko. Proyek ini menunjukkan bagaimana pendekatan supervised learning dapat digunakan secara efektif untuk pengambilan keputusan dalam bidang keuangan.
+- Logistic Regression unggul dalam recall (≈96%), efektif menangkap mayoritas nasabah berisiko, meski precision lebih rendah (≈73%).
+- Random Forest memiliki performa keseluruhan terbaik: akurasi ≈99%, precision ≈99%, recall ≈98%, sehingga ideal untuk mendeteksi nasabah berisiko gagal bayar.
+- Implementasi model ini dapat membantu perusahaan meminimalkan risiko kredit macet dan menjaga kualitas portofolio.
 
 #ML #Python #CreditRisk #SupervisedLearning #DataScience
 
